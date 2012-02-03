@@ -26,18 +26,18 @@ ADD `smtpsecure` VARCHAR( 255 ) NOT NULL DEFAULT 'none' AFTER `smtppass` ;
 ALTER TABLE `settings` CHANGE `value` `value` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
 --end settings ALTER--
 --files ALTER--
-ALTER TABLE `files` CHANGE `custom7` `custom7` tinyint(1) NOT NULL;
-ALTER TABLE `files` CHANGE `custom8` `custom8` tinyint(1) NOT NULL;
+ALTER TABLE `files` CHANGE `custom7` `custom7` tinyint(4) NOT NULL DEFAULT  '0';
+ALTER TABLE `files` CHANGE `custom8` `custom8` tinyint(4) NOT NULL DEFAULT  '0';
 --end files ALTER--
 --notes ALTER--
-ALTER TABLE `notes` CHANGE `custom7` `custom7` tinyint(1) NOT NULL;
-ALTER TABLE `notes` CHANGE `custom8` `custom8` tinyint(1) NOT NULL;
+ALTER TABLE `notes` CHANGE `custom7` `custom7` tinyint(4) NOT NULL DEFAULT  '0';
+ALTER TABLE `notes` CHANGE `custom8` `custom8` tinyint(4) NOT NULL DEFAULT  '0';
 --end notes ALTER--
 --roles ALTER--
-ALTER TABLE `roles` CHANGE `custom7` `custom7` tinyint(1) NOT NULL;
-ALTER TABLE `roles` CHANGE `custom8` `custom8` tinyint(1) NOT NULL;
+ALTER TABLE `roles` CHANGE `custom7` `custom7` tinyint(4) NOT NULL DEFAULT  '0';
+ALTER TABLE `roles` CHANGE `custom8` `custom8` tinyint(4) NOT NULL DEFAULT  '0';
 --end roles ALTER--
 --users ALTER--
-ALTER TABLE `users` CHANGE `custom7` `custom7` tinyint(1) NOT NULL;
-ALTER TABLE `users` CHANGE `custom8` `custom8` tinyint(1) NOT NULL;
+ALTER TABLE `users` CHANGE `custom7` `custom7` tinyint(4) NOT NULL DEFAULT  '0';
+ALTER TABLE `users` CHANGE `custom8` `custom8` tinyint(4) NOT NULL DEFAULT  '0';
 --end users ALTER--
